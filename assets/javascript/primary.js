@@ -15,3 +15,4 @@ function floatingNavbar() {
         navigation.classList.remove("sticky");
     }
 } 
+floatingNavbar();
