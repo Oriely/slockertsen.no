@@ -1,3 +1,15 @@
+const landing = document.getElementById('section-1');
+const about = document.getElementById('section-2');
+const portfolio = document.getElementById('section-3');
+const constact = document.getElementById('section-4');
+
+function generate()
+
+
+
+
+
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {floatingNavbar()};
 
@@ -16,3 +28,4 @@ function floatingNavbar() {
     }
 } 
 floatingNavbar();
+

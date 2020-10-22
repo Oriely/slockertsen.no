@@ -158,7 +158,7 @@ header {
     padding-bottom: 5px;
     border-bottom: 3px solid #BA361C;
     display: inline-block;
-    border-radius: 30px;
+    
     padding-left: 5px;
     padding-right: 5px;
     user-select: none;
@@ -194,14 +194,7 @@ nav a:visited {
 }
 
 
-section {
-    width: 100%;
-    background: #F8F8F6;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#section-main {
+#section-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -219,6 +212,7 @@ section {
     min-height: 100vh;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:50px;
 }
 
 #section-3 {
@@ -234,16 +228,24 @@ section:nth-child(odd) {
 
 }
 
-section h1 {
+.content {
     font-family: 'Oswald', sans-serif;
-    font-size: 60px;
     color: #F8F8F6;
     background: #BA361C;
-    margin: 1%;
-    padding: 1%;
     border-radius: 10px;
 }
+.content h1{
+    border-bottom:2px solid black;
+    padding:5px;
+    margin:10px;
+    font-size:2em;
+    grid-area:span 2;
+}
 
+.content p {
+    padding:5px;
+    margin:10px;
+}
 footer {
     font-family: 'Oswald', sans-serif;
     height: 100px;
