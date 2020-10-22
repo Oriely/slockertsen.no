@@ -1,31 +1,60 @@
+const wrapper = document.getElementById("wrapper"); 
 const landing = document.getElementById('section-1');
 const about = document.getElementById('section-2');
 const portfolio = document.getElementById('section-3');
 const constact = document.getElementById('section-4');
 
-function generate()
+generateLanding();
+
+function generateLanding(){
+    landing.innerHTMl = `
+                        <h1></h1>
+                        <p1></p>
+                    
+    `;
+}
 
 
 
+wrapper.innerHTML += '<button onclick="topFunction()" id="to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>';
 
+//Get the button:
 
+let rootElement = document.documentElement
+let totopButton = document.getElementById("to-top");
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {floatingNavbar()};
+totopButton.addEventListener("click", function (){
+    rootElement.scrollTo({
+        top: 0,
+        ehavior: "smooth"
+    })
+});
 
-// Get the navbar
-var navigation = document.getElementById("header");
+document.addEventListener("scroll", function () {
+    let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+    
+    if(rootelement.scrollTop / scrollTotal);
+    console.log(rootElement.scrollHeight);
+    console.log(rootElement.clientHeight);
 
-// Get the offset position of the navbar
-var sticky = navigation.offsetTop;
+});1
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function floatingNavbar() {
-    if (window.pageYOffset >= sticky) {
-        navigation.classList.add("sticky")
-    } else {
-        navigation.classList.remove("sticky");
-    }
-} 
-floatingNavbar();
+// // 
+// window.onscroll = function() {floatingNavbar()};
+
+// // Get the navbar
+// var navigation = document.getElementById("header");
+
+// //
+// var sticky = navigation.offsetTop;
+
+// // 
+// function floatingNavbar() {
+//     if (window.pageYOffset >= sticky) {
+//         navigation.classList.add("sticky")
+//     } else {
+//         navigation.classList.remove("sticky");
+//     }
+// } 
+// floatingNavbar();
 

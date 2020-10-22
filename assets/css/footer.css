@@ -1,0 +1,42 @@
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    height: auto;
+    padding: 50px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #052A33;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+
+#footer-left {}
+
+| #footer-middle {}
+
+#footer-right {
+    text-align: right;
+    font-size: 30px;
+}
+
+#footer-right svg {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer-right a {
+
+}
+
+
+#footer-right a {
+    
+}
+
+#footer-right a:hover {
+    color:#BA361C;
+}
