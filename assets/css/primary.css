@@ -268,8 +268,6 @@ nav a:visited {
     transform: translateY(-200px);
     transition: all .5s ease  
 }
-  
-  #to-top:hover {
+#to-top:hover {
     background-color: #555; 
-
-  }
+}

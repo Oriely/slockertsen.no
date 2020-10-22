@@ -22,12 +22,13 @@
 #contact-form input, textarea, input:invalid {
     padding:20px;
     width:85%;
-    background:inherit;
+    background: #5e1000;
     border:none;
-    border-bottom:3px solid white;
+    border-bottom:3px solid black;
     color:white;
     border-radius:5px;
     box-shadow:none;
+    resize: none;
 }
 
 
