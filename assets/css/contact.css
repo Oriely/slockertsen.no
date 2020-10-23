@@ -8,20 +8,20 @@
     width:100%;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 #contact-form {
     width: auto;
     height:auto;
-    padding:25px;
     background: #BA361C;
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
 }
 
 #contact-form input, textarea, input:invalid {
-    padding:20px;
-    width:85%;
+
+    width:100%;
     background: #1E1719;
     border:none;
     border-bottom:3px solid black;
@@ -33,12 +33,18 @@
 
 
 #contact-form-left, #contact-form-right {
-    padding:20px;
     box-sizing:border-box;
+    padding:10px;
 }
 #contact-form label {
     display:block;
-    margin:20px;
+
+    font-weight:bold;
+}
+
+#contact-form button {
+
+    width:100%;
 }
 
 @media only screen and (max-width:768px) {

@@ -133,6 +133,7 @@ table {
 #wrapper {
     width: 100%;
     background-color: #312E38;
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -140,14 +141,22 @@ header {
     background-color: #052A33;
     grid-template-columns: 1fr 1fr;
     font-family: 'Roboto Slab', serif;
-    position: static;
+    position: fixed;
     color: #F8F8F6;
     max-width:100%;
+    bottom:0;
+    overflow:hidden;
+    width:100%;
+
 }
 
+header div {
+    font-size: 20px;
+}
 #logo {
     padding: 30px 30px 25px 30px;
-    font-size: 20px;
+ 
+    font-weight:bold;
 }
 
 
@@ -164,7 +173,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
@@ -185,32 +194,23 @@ nav a:visited {
 }
 
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    padding:unset !important;
+    font-size:10px;
+    -webkit-transition: margin 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+
 }
 
-.content {
-    font-family: 'Oswald', sans-serif;
-    color: #F8F8F6;
-    background: #BA361C;
-    border-radius: 10px;
+.sticky a {
+    padding:11px;
+    font-size:15px;
 }
 
-.content h1 {
-    border-bottom: 2px solid black;
-    padding: 5px;
-    margin: 10px;
-    font-size: 2em;
+.sticky #logo {
+    padding: 10px;
 }
-
-.content p {
-    padding: 5px;
-    margin: 10px;
-}
-
-
-
 
 #notfound {
     font-family: 'Oswald', sans-serif;

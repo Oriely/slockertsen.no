@@ -22,6 +22,7 @@ wrapper.innerHTML += '<button onclick="topFunction()" id="to-top" title="Go to t
 
 let rootElement = document.documentElement
 let totopButton = document.getElementById("to-top");
+var navigation = document.getElementById("header");
 
 totopButton.addEventListener("click", function (){
     rootElement.scrollTo({
@@ -32,29 +33,39 @@ totopButton.addEventListener("click", function (){
 
 document.addEventListener("scroll", function () {
     let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-    
-    if(rootelement.scrollTop / scrollTotal);
-    console.log(rootElement.scrollHeight);
-    console.log(rootElement.clientHeight);
+    var sticky = navigation.offsetTop; 
+    var stickyfix = sticky + 600;
+    if(rootElement.scrollTop / scrollTotal) {
+
+    }
+    //console.log(rootElement.scrollHeight);
+    // console.log(rootElement.clientHeight);
+    if (window.pageYOffset > stickyfix) {
+        navigation.classList.add("sticky");
+        console.log(sticky + 'sticky');
+        console.log(window.pageYOffset + 'yoffset')
+    } else {
+        navigation.classList.remove("sticky");
+    }
 
 });1
 
-// // 
-// window.onscroll = function() {floatingNavbar()};
+// 
+window.onscroll = function() {floatingNavbar()};
 
-// // Get the navbar
-// var navigation = document.getElementById("header");
+// Get the navbar
 
-// //
-// var sticky = navigation.offsetTop;
 
-// // 
-// function floatingNavbar() {
-//     if (window.pageYOffset >= sticky) {
-//         navigation.classList.add("sticky")
-//     } else {
-//         navigation.classList.remove("sticky");
-//     }
-// } 
-// floatingNavbar();
+//
+var sticky = navigation.offsetTop;
+
+// 
+function floatingNavbar() {
+    if (window.pageYOffset >= sticky) {
+        navigation.classList.add("sticky")
+    } else {
+        navigation.classList.remove("sticky");
+    }
+} 
+floatingNavbar();
 

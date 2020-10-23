@@ -1,13 +1,20 @@
 
 #section-1 {
+    display:grid;
+    grid-template-rows:10vh  90vh;
+    background: #1E1719;
+}
+
+.landing {
+    height:90vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     text-align: center;
     min-height: 100vh;
     width: inherit;
-    background: #1E1719;
 }
+
+
