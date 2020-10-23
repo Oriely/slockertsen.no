@@ -202,7 +202,6 @@ nav a:visited {
     padding: 5px;
     margin: 10px;
     font-size: 2em;
-    grid-area: span 2;
 }
 
 .content p {
@@ -263,7 +262,7 @@ nav a:visited {
     font-size: 30px;
     color:white;
     transform: translateY(-200px);
-    transition: all .5s ease  
+    transition: all .5s ease;
 }
 #to-top:hover {
     background-color: #555; 

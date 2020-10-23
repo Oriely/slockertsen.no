@@ -35,14 +35,13 @@ footer {
     margin-right: 10px;
 }
 
-#footer-right a {
-
+/*#footer-right a {
+    
 }
-
+*/
 
 #footer-right a {
     color:white;
-}
 
 #footer-right a:hover {
     color: #BA361C !important;

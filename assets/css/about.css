@@ -7,3 +7,9 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 50px;
 }
+
+@media only screen and (max-width:768px) {
+    #section-2 {
+        display:block;
+    }
+}
